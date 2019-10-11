@@ -15,14 +15,15 @@ To view a copy of this license, visit <http://opensource.org/licenses/MIT/>.
 import json
 import os
 import sys
+from urllib import request
 
-from six.moves.urllib import request
 from sseclient import SSEClient
+
 from synbiochem.utils import net_utils
 
 
-class PlasmidGenieClient(object):
-    '''PlasmidGenieClient class.'''
+class PartsGenieClient():
+    '''PartsGenieClient class.'''
 
     def __init__(self, ice_params, url='https://parts.synbiochem.co.uk'):
         self.__ice_params = ice_params
@@ -154,7 +155,7 @@ def main(args):
                   u'password': args[2],
                   u'groups': args[3]}
 
-    client = PlasmidGenieClient(ice_params)
+    client = PartsGenieClient(ice_params)
     client.run(in_filename=args[4], out_filename=args[5], restr_enzs=args[6:])
 
 
