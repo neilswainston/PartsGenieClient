@@ -8,99 +8,50 @@ To view a copy of this license, visit <http://opensource.org/licenses/MIT/>.
 @author:  neilswainston
 '''
 # pylint: disable=too-few-public-methods
-# pylint: disable=too-many-arguments
-# pylint: disable=relative-import
-# pylint: disable=superfluous-parens
-# pylint: disable=wrong-import-order
 import json
-import os
 import sys
-from urllib import request
-
+import requests
 from sseclient import SSEClient
-
-from synbiochem.utils import net_utils
 
 
 class PartsGenieClient():
     '''PartsGenieClient class.'''
 
-    def __init__(self, ice_params, url='https://parts.synbiochem.co.uk'):
-        self.__ice_params = ice_params
+    def __init__(self, url='https://parts.synbiochem.co.uk'):
         self.__url = url if url[-1] == '/' else url + '/'
 
-    def run(self, in_filename, restr_enzs, melt_temp=70.0,
-            circular=True, out_filename='export.zip'):
+    def run(self, filenames, out_dir):
         '''Run client.'''
-        plas_gen_result = self.__run_plasmid_genie(in_filename, restr_enzs,
-                                                   melt_temp, circular)
+        job_ids = self.__run_parts_genie(filenames)
+        print(job_ids)
 
-        save_result = self.__run_save(plas_gen_result)
-        export_result = self.__run_export(save_result)
+        results = {}
 
-        self.__save_export(export_result['path'], out_filename)
+        for job_id in job_ids:
+            if job_id not in results:
+                response = self.__get_progress(job_id)
 
-    def __run_plasmid_genie(self, filename, restr_enzs, melt_temp, circular):
-        '''Run PlasmidGenie.'''
-        query = self.__get_plasmid_genie_query(filename, restr_enzs,
-                                               melt_temp, circular)
-        responses = self.__run_query(query)
+                if response[0][0][0] == 'finished':
+                    results.update({res['desc']: res['seq']
+                                    for res in response[0][1]['result']})
+                else:
+                    raise Exception(job_id)
 
-        return responses[0][1]['result'] \
-            if responses[0][0][0] == 'finished' else None
+        print(results)
 
-    def __run_save(self, result):
-        '''Save PlasmidGenie result to ICE.'''
-        query = self.__get_result_query(result)
-        response = self.__run_query(query)
+    def __run_parts_genie(self, filenames):
+        '''Run PartsGenie.'''
+        url = self.__url + 'submit_sbol'
 
-        for res, ice_ids in zip(result, response[0][1]['result']):
-            res['ice_ids'] = ice_ids
+        files = [('sbol', open(filename, 'rb'))
+                 for filename in filenames]
 
-        return result
+        resp = requests.post(url, files=files)
+        resp_json = json.loads(resp.text)
 
-    def __run_export(self, designs):
-        '''Run export method to receive list of components.'''
-        query = self.__get_result_query(designs)
-        return self. __get_response('export', query)
+        print(resp_json)
 
-    def __run_query(self, query):
-        '''Run query.'''
-        resp = self.__get_response('submit', query)
-
-        job_id = resp['job_ids'][0]
-        return self.__get_progress(job_id)
-
-    def __get_response(self, method, query):
-        '''Get response.'''
-        headers = {'Accept': 'application/json, text/plain, */*',
-                   'Accept-Language': 'en-gb',
-                   'Content-Type': 'application/json;charset=UTF-8'}
-
-        return json.loads(net_utils.post(self.__url + method,
-                                         json.dumps(query),
-                                         headers))
-
-    def __get_plasmid_genie_query(self, filename, restr_enzs, melt_temp,
-                                  circular):
-        '''Return query.'''
-        query = {u'designs': _get_designs(filename),
-                 u'app': 'PlasmidGenie',
-                 u'ice': self.__ice_params,
-                 u'design_id': _get_design_id(filename),
-                 u'restr_enzs': restr_enzs,
-                 u'melt_temp': melt_temp,
-                 u'circular': circular}
-
-        return query
-
-    def __get_result_query(self, designs):
-        '''Return query.'''
-        query = {u'designs': designs,
-                 u'app': 'save',
-                 u'ice': self.__ice_params}
-
-        return query
+        return resp_json['job_ids']
 
     def __get_progress(self, job_id):
         '''Get progress.'''
@@ -116,7 +67,7 @@ class PartsGenieClient():
 
             if updated_status != status:
                 status = updated_status
-                print('\t'.join([str(val) for val in status]))
+                print('\t'.join([job_id] + [str(val) for val in status]))
 
                 if status[0] != 'running':
                     responses.append([status, resp])
@@ -124,39 +75,11 @@ class PartsGenieClient():
 
         return responses
 
-    def __save_export(self, path, out_filename):
-        '''Save export result.'''
-        request.urlretrieve(self.__url + path, out_filename)
-        print('Exported to ' + out_filename)
-
-
-def _get_design_id(filename):
-    '''Get design id.'''
-    _, tail = os.path.split(filename)
-    return os.path.splitext(tail)[0]
-
-
-def _get_designs(filename):
-    '''Get designs.'''
-    designs = []
-
-    with open(filename, 'rU') as fle:
-        for line in fle:
-            tokens = line.split()
-            designs.append({'name': tokens[0], 'design': tokens[1:]})
-
-    return designs
-
 
 def main(args):
     '''main method.'''
-    ice_params = {u'url': args[0],
-                  u'username': args[1],
-                  u'password': args[2],
-                  u'groups': args[3]}
-
-    client = PartsGenieClient(ice_params)
-    client.run(in_filename=args[4], out_filename=args[5], restr_enzs=args[6:])
+    client = PartsGenieClient(url='http://0.0.0.0:5000/')
+    client.run(args[1:], args[0])
 
 
 if __name__ == '__main__':
