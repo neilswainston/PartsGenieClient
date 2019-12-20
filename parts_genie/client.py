@@ -100,7 +100,7 @@ def _update_docs(filenames, results, out_dir):
 
 def main(args):
     '''main method.'''
-    client = PartsGenieClient(url='http://0.0.0.0:5000/')
+    client = PartsGenieClient()
     client.run(args[1:], args[0])
 
 
