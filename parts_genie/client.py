@@ -100,8 +100,8 @@ def _update_docs(filenames, results, out_dir):
 
 def main(args):
     '''main method.'''
-    client = PartsGenieClient()
-    client.run(args[1:], args[0])
+    client = PartsGenieClient(args[0])
+    client.run(args[2:], args[1])
 
 
 if __name__ == '__main__':
