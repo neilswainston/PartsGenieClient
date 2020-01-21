@@ -23,10 +23,12 @@ class PartsGenieClient():
     def __init__(self, url='https://parts.synbiochem.co.uk'):
         self.__url = url if url[-1] == '/' else url + '/'
 
-    def run(self, filenames, out_dir):
+    def run(self, filepaths, out_dir):
         '''Run client.'''
         if not os.path.exists(out_dir):
             os.makedirs(out_dir)
+
+        filenames = _get_filenames(filepaths)
 
         job_ids = self.__run_parts_genie(filenames)
 
@@ -96,6 +98,30 @@ def _update_docs(filenames, results, out_dir):
                                  SBOL_ENCODING_IUPAC)
 
         doc.write(os.path.join(out_dir, os.path.basename(filename)))
+
+
+def _get_filenames(filepaths):
+    '''Get filename.'''
+    all_filenames = []
+
+    for filepath in filepaths:
+        all_filenames.extend(_get_filename(filepath))
+
+    return all_filenames
+
+
+def _get_filename(filepath):
+    '''Get filename.'''
+    filenames = []
+
+    if os.path.isdir(filepath):
+        for filename in os.listdir(os.path.abspath(filepath)):
+            filenames.append(os.path.join(filepath, filename))
+
+        return filenames
+
+    # else:
+    return [filepath]
 
 
 def main(args):
