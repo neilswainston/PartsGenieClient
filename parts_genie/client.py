@@ -16,6 +16,8 @@ import sys
 import requests
 from sbol import Config, Document, Sequence, SBOL_ENCODING_IUPAC
 from sseclient import SSEClient
+from synbiochem.utils.io_utils import get_filenames
+
 
 Config.setOption('validate', False)
 
@@ -31,7 +33,7 @@ class PartsGenieClient():
         if not os.path.exists(out_dir):
             os.makedirs(out_dir)
 
-        filenames = _get_filenames(filepaths)
+        filenames = get_filenames(filepaths)
 
         job_ids = self.__run_parts_genie(filenames)
 
@@ -106,30 +108,6 @@ def _update_docs(filenames, results, out_dir):
                                  SBOL_ENCODING_IUPAC)
 
         doc.write(os.path.join(out_dir, os.path.basename(filename)))
-
-
-def _get_filenames(filepaths):
-    '''Get filename.'''
-    all_filenames = []
-
-    for filepath in filepaths:
-        all_filenames.extend(_get_filename(filepath))
-
-    return all_filenames
-
-
-def _get_filename(filepath):
-    '''Get filename.'''
-    filenames = []
-
-    if os.path.isdir(filepath):
-        for filename in os.listdir(os.path.abspath(filepath)):
-            filenames.append(os.path.join(filepath, filename))
-
-        return filenames
-
-    # else:
-    return [filepath]
 
 
 def main(args):
