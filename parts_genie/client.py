@@ -13,8 +13,10 @@ import os.path
 import sys
 
 import requests
-from sbol import Document, Sequence, SBOL_ENCODING_IUPAC
+from sbol import Config, Document, Sequence, SBOL_ENCODING_IUPAC
 from sseclient import SSEClient
+
+Config.setOption('validate', False)
 
 
 class PartsGenieClient():
