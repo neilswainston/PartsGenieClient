@@ -7,6 +7,7 @@ To view a copy of this license, visit <http://opensource.org/licenses/MIT/>.
 
 @author:  neilswainston
 '''
+# pylint: disable=invalid-name
 # pylint: disable=too-few-public-methods
 import json
 import os.path
@@ -52,11 +53,16 @@ class PartsGenieClient():
         '''Run PartsGenie.'''
         url = self.__url + 'submit_sbol'
 
-        files = [('sbol', open(filename, 'rb'))
-                 for filename in filenames]
+        try:
+            fhs = [open(filename, 'rb') for filename in filenames]
 
-        resp = requests.post(url, files=files)
-        resp_json = json.loads(resp.text)
+            files = [('sbol', fh) for fh in fhs]
+
+            resp = requests.post(url, files=files)
+            resp_json = json.loads(resp.text)
+        finally:
+            for fh in fhs:
+                fh.close()
 
         return resp_json['job_ids']
 
