@@ -16,7 +16,6 @@ import sys
 import requests
 from sbol import Config, Document, Sequence, SBOL_ENCODING_IUPAC
 from sseclient import SSEClient
-from synbiochem.utils.io_utils import get_filenames
 
 
 Config.setOption('validate', False)
@@ -28,14 +27,12 @@ class PartsGenieClient():
     def __init__(self, url='https://parts.synbiochem.co.uk'):
         self.__url = url if url[-1] == '/' else url + '/'
 
-    def run(self, filepaths, out_dir):
+    def run(self, filename, out_dir):
         '''Run client.'''
         if not os.path.exists(out_dir):
             os.makedirs(out_dir)
 
-        filenames = get_filenames(filepaths)
-
-        job_ids = self.__run_parts_genie(filenames)
+        job_ids = self.__run_parts_genie(filename)
 
         results = {}
 
@@ -44,29 +41,22 @@ class PartsGenieClient():
                 response = self.__get_progress(job_id)
 
                 if response[0][0][0] == 'finished':
-                    results.update({res['desc']: res['seq']
+                    results.update({res['desc']: res
                                     for res in response[0][1]['result']})
                 else:
                     raise Exception(job_id)
 
-        _update_docs(filenames, results, out_dir)
+        _update_docs(filename, results, out_dir)
 
-    def __run_parts_genie(self, filenames):
+    def __run_parts_genie(self, filename):
         '''Run PartsGenie.'''
         url = self.__url + 'submit_sbol'
 
-        try:
-            fhs = [open(filename, 'rb') for filename in filenames]
-
-            files = [('sbol', fh) for fh in fhs]
-
+        with open(filename, 'rb') as fle:
+            files = [('sbol', fle)]
             resp = requests.post(url, files=files)
             resp_json = json.loads(resp.text)
-        finally:
-            for fh in fhs:
-                fh.close()
-
-        return resp_json['job_ids']
+            return resp_json['job_ids']
 
     def __get_progress(self, job_id):
         '''Get progress.'''
@@ -90,30 +80,47 @@ class PartsGenieClient():
         return responses
 
 
-def _update_docs(filenames, results, out_dir):
+def _update_docs(filename, results, out_dir):
     '''Update documents.'''
-    docs = [Document() for _ in filenames]
+    doc = Document()
+    doc.read(filename)
 
-    for doc, filename in zip(docs, filenames):
-        doc.read(filename)
+    for gene_uri, result in results.items():
+        # Get gene definition:
+        gene_def = doc.getComponentDefinition(gene_uri)
+        seq = ''
 
-        for comp_def in doc.componentDefinitions:
+        # Iterate through sub component definitions:
+        for comp_def in [doc.getComponentDefinition(c.definition)
+                         for c in gene_def.components]:
+            # Update sub component sequence if not already set:
             if not comp_def.sequence:
-                seq = results.get(comp_def.identity, None)
+                feature = [f for f in result['features']
+                           if f['name'] == comp_def.identity][0]
 
-                if seq:
-                    comp_def.sequence = \
-                        Sequence('%s_seq' % comp_def.displayId,
-                                 seq,
-                                 SBOL_ENCODING_IUPAC)
+                subseq = feature['seq']
 
-        doc.write(os.path.join(out_dir, os.path.basename(filename)))
+                comp_def.sequence = \
+                    Sequence('%s_seq' % comp_def.displayId,
+                             subseq,
+                             SBOL_ENCODING_IUPAC)
+            else:
+                subseq = comp_def.sequence.elements
+
+            seq += subseq
+
+        gene_def.sequence = \
+            Sequence('%s_seq' % gene_def.displayId,
+                     seq,
+                     SBOL_ENCODING_IUPAC)
+
+    doc.write(os.path.join(out_dir, os.path.basename(filename)))
 
 
 def main(args):
     '''main method.'''
     client = PartsGenieClient(args[0])
-    client.run(args[2:], args[1])
+    client.run(args[1], args[2])
 
 
 if __name__ == '__main__':
