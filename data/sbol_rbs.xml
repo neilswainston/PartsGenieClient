@@ -1,0 +1,1687 @@
+<?xml version="1.0" ?>
+<rdf:RDF xmlns:prov="http://www.w3.org/ns/prov#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:sys-bio="http://sys-bio.org#" xmlns:sbol="http://sbols.org/v2#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85673_30000_gene/1">
+    <sbol:displayId>O85673_30000_gene</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_30000_gene"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000704"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://identifiers.org/so/SO:0000987"/>
+    <sbol:version>1</sbol:version>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85673_30000_gene/RP2_5_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP2_5_prime_assembly/1"/>
+        <sbol:displayId>RP2_5_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_30000_gene/RP2_5_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85673_30000_gene/O85673_30000_rbs_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_30000_rbs/1"/>
+        <sbol:displayId>O85673_30000_rbs_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_30000_gene/O85673_30000_rbs_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85673_30000_gene/O85673_30000_cds_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_30000_cds/1"/>
+        <sbol:displayId>O85673_30000_cds_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_30000_gene/O85673_30000_cds_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85673_30000_gene/RP2_3_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP2_3_prime_assembly/1"/>
+        <sbol:displayId>RP2_3_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_30000_gene/RP2_3_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85673_30000_gene/constraint_0/1">
+        <sbol:displayId>constraint_0</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_30000_gene/O85673_30000_rbs_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_30000_gene/constraint_0"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_30000_gene/RP2_5_prime_assembly_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85673_30000_gene/constraint_1/1">
+        <sbol:displayId>constraint_1</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_30000_gene/O85673_30000_cds_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_30000_gene/constraint_1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_30000_gene/O85673_30000_rbs_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85673_30000_gene/constraint_2/1">
+        <sbol:displayId>constraint_2</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_30000_gene/RP2_3_prime_assembly_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_30000_gene/constraint_2"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_30000_gene/O85673_30000_cds_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85673_30000_cds/1">
+    <sbol:displayId>O85673_30000_cds</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_30000_cds"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85673_30000_rbs/1">
+    <sbol:displayId>O85673_30000_rbs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_30000_rbs"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85673_20000_gene/1">
+    <sbol:displayId>O85673_20000_gene</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_20000_gene"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000704"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://identifiers.org/so/SO:0000987"/>
+    <sbol:version>1</sbol:version>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85673_20000_gene/RP2_5_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP2_5_prime_assembly/1"/>
+        <sbol:displayId>RP2_5_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_20000_gene/RP2_5_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85673_20000_gene/O85673_20000_rbs_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_20000_rbs/1"/>
+        <sbol:displayId>O85673_20000_rbs_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_20000_gene/O85673_20000_rbs_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85673_20000_gene/O85673_20000_cds_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_20000_cds/1"/>
+        <sbol:displayId>O85673_20000_cds_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_20000_gene/O85673_20000_cds_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85673_20000_gene/RP2_3_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP2_3_prime_assembly/1"/>
+        <sbol:displayId>RP2_3_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_20000_gene/RP2_3_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85673_20000_gene/constraint_0/1">
+        <sbol:displayId>constraint_0</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_20000_gene/O85673_20000_rbs_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_20000_gene/constraint_0"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_20000_gene/RP2_5_prime_assembly_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85673_20000_gene/constraint_1/1">
+        <sbol:displayId>constraint_1</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_20000_gene/O85673_20000_cds_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_20000_gene/constraint_1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_20000_gene/O85673_20000_rbs_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85673_20000_gene/constraint_2/1">
+        <sbol:displayId>constraint_2</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_20000_gene/RP2_3_prime_assembly_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_20000_gene/constraint_2"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_20000_gene/O85673_20000_cds_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85673_20000_cds/1">
+    <sbol:displayId>O85673_20000_cds</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_20000_cds"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85673_10000_gene/1">
+    <sbol:displayId>O85673_10000_gene</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_10000_gene"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000704"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://identifiers.org/so/SO:0000987"/>
+    <sbol:version>1</sbol:version>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85673_10000_gene/RP2_5_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP2_5_prime_assembly/1"/>
+        <sbol:displayId>RP2_5_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_10000_gene/RP2_5_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85673_10000_gene/O85673_10000_rbs_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_10000_rbs/1"/>
+        <sbol:displayId>O85673_10000_rbs_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_10000_gene/O85673_10000_rbs_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85673_10000_gene/O85673_10000_cds_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_10000_cds/1"/>
+        <sbol:displayId>O85673_10000_cds_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_10000_gene/O85673_10000_cds_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85673_10000_gene/RP2_3_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP2_3_prime_assembly/1"/>
+        <sbol:displayId>RP2_3_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_10000_gene/RP2_3_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85673_10000_gene/constraint_0/1">
+        <sbol:displayId>constraint_0</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_10000_gene/O85673_10000_rbs_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_10000_gene/constraint_0"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_10000_gene/RP2_5_prime_assembly_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85673_10000_gene/constraint_1/1">
+        <sbol:displayId>constraint_1</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_10000_gene/O85673_10000_cds_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_10000_gene/constraint_1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_10000_gene/O85673_10000_rbs_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85673_10000_gene/constraint_2/1">
+        <sbol:displayId>constraint_2</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_10000_gene/RP2_3_prime_assembly_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_10000_gene/constraint_2"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_10000_gene/O85673_10000_cds_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85673_10000_rbs/1">
+    <sbol:displayId>O85673_10000_rbs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_10000_rbs"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85674_30000_cds/1">
+    <sbol:displayId>O85674_30000_cds</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_30000_cds"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85674_30000_rbs/1">
+    <sbol:displayId>O85674_30000_rbs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_30000_rbs"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85674_20000_gene/1">
+    <sbol:displayId>O85674_20000_gene</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_20000_gene"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000704"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://identifiers.org/so/SO:0000987"/>
+    <sbol:version>1</sbol:version>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85674_20000_gene/RP2_5_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP2_5_prime_assembly/1"/>
+        <sbol:displayId>RP2_5_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_20000_gene/RP2_5_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85674_20000_gene/O85674_20000_rbs_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_20000_rbs/1"/>
+        <sbol:displayId>O85674_20000_rbs_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_20000_gene/O85674_20000_rbs_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85674_20000_gene/O85674_20000_cds_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_20000_cds/1"/>
+        <sbol:displayId>O85674_20000_cds_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_20000_gene/O85674_20000_cds_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85674_20000_gene/RP2_3_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP2_3_prime_assembly/1"/>
+        <sbol:displayId>RP2_3_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_20000_gene/RP2_3_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85674_20000_gene/constraint_0/1">
+        <sbol:displayId>constraint_0</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_20000_gene/O85674_20000_rbs_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_20000_gene/constraint_0"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_20000_gene/RP2_5_prime_assembly_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85674_20000_gene/constraint_1/1">
+        <sbol:displayId>constraint_1</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_20000_gene/O85674_20000_cds_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_20000_gene/constraint_1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_20000_gene/O85674_20000_rbs_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85674_20000_gene/constraint_2/1">
+        <sbol:displayId>constraint_2</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_20000_gene/RP2_3_prime_assembly_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_20000_gene/constraint_2"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_20000_gene/O85674_20000_cds_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/P07773_20000_cds/1">
+    <sbol:displayId>P07773_20000_cds</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_20000_cds"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85674_10000_gene/1">
+    <sbol:displayId>O85674_10000_gene</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_10000_gene"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000704"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://identifiers.org/so/SO:0000987"/>
+    <sbol:version>1</sbol:version>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85674_10000_gene/RP2_5_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP2_5_prime_assembly/1"/>
+        <sbol:displayId>RP2_5_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_10000_gene/RP2_5_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85674_10000_gene/O85674_10000_rbs_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_10000_rbs/1"/>
+        <sbol:displayId>O85674_10000_rbs_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_10000_gene/O85674_10000_rbs_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85674_10000_gene/O85674_10000_cds_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_10000_cds/1"/>
+        <sbol:displayId>O85674_10000_cds_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_10000_gene/O85674_10000_cds_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85674_10000_gene/RP2_3_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP2_3_prime_assembly/1"/>
+        <sbol:displayId>RP2_3_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_10000_gene/RP2_3_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85674_10000_gene/constraint_0/1">
+        <sbol:displayId>constraint_0</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_10000_gene/O85674_10000_rbs_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_10000_gene/constraint_0"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_10000_gene/RP2_5_prime_assembly_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85674_10000_gene/constraint_1/1">
+        <sbol:displayId>constraint_1</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_10000_gene/O85674_10000_cds_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_10000_gene/constraint_1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_10000_gene/O85674_10000_rbs_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85674_10000_gene/constraint_2/1">
+        <sbol:displayId>constraint_2</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_10000_gene/RP2_3_prime_assembly_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_10000_gene/constraint_2"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_10000_gene/O85674_10000_cds_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33950_20000_rbs/1">
+    <sbol:displayId>O33950_20000_rbs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_20000_rbs"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85675_30000_gene/1">
+    <sbol:displayId>O85675_30000_gene</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_30000_gene"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000704"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://identifiers.org/so/SO:0000987"/>
+    <sbol:version>1</sbol:version>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85675_30000_gene/RP2_5_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP2_5_prime_assembly/1"/>
+        <sbol:displayId>RP2_5_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_30000_gene/RP2_5_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85675_30000_gene/O85675_30000_rbs_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_30000_rbs/1"/>
+        <sbol:displayId>O85675_30000_rbs_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_30000_gene/O85675_30000_rbs_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85675_30000_gene/O85675_30000_cds_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_30000_cds/1"/>
+        <sbol:displayId>O85675_30000_cds_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_30000_gene/O85675_30000_cds_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85675_30000_gene/RP2_3_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP2_3_prime_assembly/1"/>
+        <sbol:displayId>RP2_3_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_30000_gene/RP2_3_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85675_30000_gene/constraint_0/1">
+        <sbol:displayId>constraint_0</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_30000_gene/O85675_30000_rbs_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_30000_gene/constraint_0"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_30000_gene/RP2_5_prime_assembly_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85675_30000_gene/constraint_1/1">
+        <sbol:displayId>constraint_1</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_30000_gene/O85675_30000_cds_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_30000_gene/constraint_1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_30000_gene/O85675_30000_rbs_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85675_30000_gene/constraint_2/1">
+        <sbol:displayId>constraint_2</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_30000_gene/RP2_3_prime_assembly_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_30000_gene/constraint_2"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_30000_gene/O85675_30000_cds_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85675_20000_gene/1">
+    <sbol:displayId>O85675_20000_gene</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_20000_gene"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000704"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://identifiers.org/so/SO:0000987"/>
+    <sbol:version>1</sbol:version>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85675_20000_gene/RP2_5_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP2_5_prime_assembly/1"/>
+        <sbol:displayId>RP2_5_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_20000_gene/RP2_5_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85675_20000_gene/O85675_20000_rbs_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_20000_rbs/1"/>
+        <sbol:displayId>O85675_20000_rbs_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_20000_gene/O85675_20000_rbs_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85675_20000_gene/O85675_20000_cds_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_20000_cds/1"/>
+        <sbol:displayId>O85675_20000_cds_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_20000_gene/O85675_20000_cds_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85675_20000_gene/RP2_3_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP2_3_prime_assembly/1"/>
+        <sbol:displayId>RP2_3_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_20000_gene/RP2_3_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85675_20000_gene/constraint_0/1">
+        <sbol:displayId>constraint_0</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_20000_gene/O85675_20000_rbs_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_20000_gene/constraint_0"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_20000_gene/RP2_5_prime_assembly_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85675_20000_gene/constraint_1/1">
+        <sbol:displayId>constraint_1</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_20000_gene/O85675_20000_cds_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_20000_gene/constraint_1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_20000_gene/O85675_20000_rbs_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85675_20000_gene/constraint_2/1">
+        <sbol:displayId>constraint_2</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_20000_gene/RP2_3_prime_assembly_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_20000_gene/constraint_2"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_20000_gene/O85675_20000_cds_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85675_10000_rbs/1">
+    <sbol:displayId>O85675_10000_rbs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_10000_rbs"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/RP2_3_prime_assembly/1">
+    <sbol:displayId>RP2_3_prime_assembly</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP2_3_prime_assembly"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000143"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/RP2_5_prime_assembly/1">
+    <sbol:displayId>RP2_5_prime_assembly</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP2_5_prime_assembly"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000143"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33948_30000_gene/1">
+    <sbol:displayId>O33948_30000_gene</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_30000_gene"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000704"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://identifiers.org/so/SO:0000987"/>
+    <sbol:version>1</sbol:version>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33948_30000_gene/RP1_5_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP1_5_prime_assembly/1"/>
+        <sbol:displayId>RP1_5_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_30000_gene/RP1_5_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33948_30000_gene/O33948_30000_rbs_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_30000_rbs/1"/>
+        <sbol:displayId>O33948_30000_rbs_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_30000_gene/O33948_30000_rbs_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33948_30000_gene/O33948_30000_cds_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_30000_cds/1"/>
+        <sbol:displayId>O33948_30000_cds_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_30000_gene/O33948_30000_cds_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33948_30000_gene/RP1_3_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP1_3_prime_assembly/1"/>
+        <sbol:displayId>RP1_3_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_30000_gene/RP1_3_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33948_30000_gene/constraint_0/1">
+        <sbol:displayId>constraint_0</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_30000_gene/O33948_30000_rbs_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_30000_gene/constraint_0"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_30000_gene/RP1_5_prime_assembly_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33948_30000_gene/constraint_1/1">
+        <sbol:displayId>constraint_1</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_30000_gene/O33948_30000_cds_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_30000_gene/constraint_1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_30000_gene/O33948_30000_rbs_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33948_30000_gene/constraint_2/1">
+        <sbol:displayId>constraint_2</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_30000_gene/RP1_3_prime_assembly_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_30000_gene/constraint_2"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_30000_gene/O33948_30000_cds_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33950_30000_gene/1">
+    <sbol:displayId>O33950_30000_gene</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_30000_gene"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000704"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://identifiers.org/so/SO:0000987"/>
+    <sbol:version>1</sbol:version>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33950_30000_gene/RP1_5_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP1_5_prime_assembly/1"/>
+        <sbol:displayId>RP1_5_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_30000_gene/RP1_5_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33950_30000_gene/O33950_30000_rbs_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_30000_rbs/1"/>
+        <sbol:displayId>O33950_30000_rbs_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_30000_gene/O33950_30000_rbs_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33950_30000_gene/O33950_30000_cds_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_30000_cds/1"/>
+        <sbol:displayId>O33950_30000_cds_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_30000_gene/O33950_30000_cds_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33950_30000_gene/RP1_3_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP1_3_prime_assembly/1"/>
+        <sbol:displayId>RP1_3_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_30000_gene/RP1_3_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33950_30000_gene/constraint_0/1">
+        <sbol:displayId>constraint_0</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_30000_gene/O33950_30000_rbs_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_30000_gene/constraint_0"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_30000_gene/RP1_5_prime_assembly_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33950_30000_gene/constraint_1/1">
+        <sbol:displayId>constraint_1</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_30000_gene/O33950_30000_cds_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_30000_gene/constraint_1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_30000_gene/O33950_30000_rbs_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33950_30000_gene/constraint_2/1">
+        <sbol:displayId>constraint_2</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_30000_gene/RP1_3_prime_assembly_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_30000_gene/constraint_2"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_30000_gene/O33950_30000_cds_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85675_10000_cds/1">
+    <sbol:displayId>O85675_10000_cds</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_10000_cds"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33950_10000_rbs/1">
+    <sbol:displayId>O33950_10000_rbs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_10000_rbs"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33950_30000_cds/1">
+    <sbol:displayId>O33950_30000_cds</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_30000_cds"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33950_30000_rbs/1">
+    <sbol:displayId>O33950_30000_rbs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_30000_rbs"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85674_10000_cds/1">
+    <sbol:displayId>O85674_10000_cds</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_10000_cds"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33950_20000_gene/1">
+    <sbol:displayId>O33950_20000_gene</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_20000_gene"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000704"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://identifiers.org/so/SO:0000987"/>
+    <sbol:version>1</sbol:version>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33950_20000_gene/RP1_5_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP1_5_prime_assembly/1"/>
+        <sbol:displayId>RP1_5_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_20000_gene/RP1_5_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33950_20000_gene/O33950_20000_rbs_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_20000_rbs/1"/>
+        <sbol:displayId>O33950_20000_rbs_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_20000_gene/O33950_20000_rbs_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33950_20000_gene/O33950_20000_cds_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_20000_cds/1"/>
+        <sbol:displayId>O33950_20000_cds_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_20000_gene/O33950_20000_cds_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33950_20000_gene/RP1_3_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP1_3_prime_assembly/1"/>
+        <sbol:displayId>RP1_3_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_20000_gene/RP1_3_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33950_20000_gene/constraint_0/1">
+        <sbol:displayId>constraint_0</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_20000_gene/O33950_20000_rbs_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_20000_gene/constraint_0"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_20000_gene/RP1_5_prime_assembly_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33950_20000_gene/constraint_1/1">
+        <sbol:displayId>constraint_1</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_20000_gene/O33950_20000_cds_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_20000_gene/constraint_1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_20000_gene/O33950_20000_rbs_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33950_20000_gene/constraint_2/1">
+        <sbol:displayId>constraint_2</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_20000_gene/RP1_3_prime_assembly_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_20000_gene/constraint_2"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_20000_gene/O33950_20000_cds_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85675_30000_cds/1">
+    <sbol:displayId>O85675_30000_cds</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_30000_cds"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33950_10000_gene/1">
+    <sbol:displayId>O33950_10000_gene</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_10000_gene"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000704"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://identifiers.org/so/SO:0000987"/>
+    <sbol:version>1</sbol:version>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33950_10000_gene/RP1_5_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP1_5_prime_assembly/1"/>
+        <sbol:displayId>RP1_5_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_10000_gene/RP1_5_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33950_10000_gene/O33950_10000_rbs_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_10000_rbs/1"/>
+        <sbol:displayId>O33950_10000_rbs_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_10000_gene/O33950_10000_rbs_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33950_10000_gene/O33950_10000_cds_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_10000_cds/1"/>
+        <sbol:displayId>O33950_10000_cds_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_10000_gene/O33950_10000_cds_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33950_10000_gene/RP1_3_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP1_3_prime_assembly/1"/>
+        <sbol:displayId>RP1_3_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_10000_gene/RP1_3_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33950_10000_gene/constraint_0/1">
+        <sbol:displayId>constraint_0</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_10000_gene/O33950_10000_rbs_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_10000_gene/constraint_0"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_10000_gene/RP1_5_prime_assembly_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33950_10000_gene/constraint_1/1">
+        <sbol:displayId>constraint_1</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_10000_gene/O33950_10000_cds_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_10000_gene/constraint_1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_10000_gene/O33950_10000_rbs_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33950_10000_gene/constraint_2/1">
+        <sbol:displayId>constraint_2</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_10000_gene/RP1_3_prime_assembly_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_10000_gene/constraint_2"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_10000_gene/O33950_10000_cds_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33950_10000_cds/1">
+    <sbol:displayId>O33950_10000_cds</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_10000_cds"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85675_20000_rbs/1">
+    <sbol:displayId>O85675_20000_rbs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_20000_rbs"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33948_30000_rbs/1">
+    <sbol:displayId>O33948_30000_rbs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_30000_rbs"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85673_20000_rbs/1">
+    <sbol:displayId>O85673_20000_rbs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_20000_rbs"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85675_20000_cds/1">
+    <sbol:displayId>O85675_20000_cds</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_20000_cds"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33948_20000_cds/1">
+    <sbol:displayId>O33948_20000_cds</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_20000_cds"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85673_10000_cds/1">
+    <sbol:displayId>O85673_10000_cds</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85673_10000_cds"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33948_20000_rbs/1">
+    <sbol:displayId>O33948_20000_rbs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_20000_rbs"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85674_10000_rbs/1">
+    <sbol:displayId>O85674_10000_rbs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_10000_rbs"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/P07773_20000_gene/1">
+    <sbol:displayId>P07773_20000_gene</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_20000_gene"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000704"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://identifiers.org/so/SO:0000987"/>
+    <sbol:version>1</sbol:version>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/P07773_20000_gene/RP1_5_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP1_5_prime_assembly/1"/>
+        <sbol:displayId>RP1_5_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_20000_gene/RP1_5_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/P07773_20000_gene/P07773_20000_rbs_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_20000_rbs/1"/>
+        <sbol:displayId>P07773_20000_rbs_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_20000_gene/P07773_20000_rbs_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/P07773_20000_gene/P07773_20000_cds_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_20000_cds/1"/>
+        <sbol:displayId>P07773_20000_cds_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_20000_gene/P07773_20000_cds_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/P07773_20000_gene/RP1_3_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP1_3_prime_assembly/1"/>
+        <sbol:displayId>RP1_3_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_20000_gene/RP1_3_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/P07773_20000_gene/constraint_0/1">
+        <sbol:displayId>constraint_0</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_20000_gene/P07773_20000_rbs_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_20000_gene/constraint_0"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_20000_gene/RP1_5_prime_assembly_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/P07773_20000_gene/constraint_1/1">
+        <sbol:displayId>constraint_1</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_20000_gene/P07773_20000_cds_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_20000_gene/constraint_1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_20000_gene/P07773_20000_rbs_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/P07773_20000_gene/constraint_2/1">
+        <sbol:displayId>constraint_2</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_20000_gene/RP1_3_prime_assembly_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_20000_gene/constraint_2"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_20000_gene/P07773_20000_cds_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33948_30000_cds/1">
+    <sbol:displayId>O33948_30000_cds</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_30000_cds"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33950_20000_cds/1">
+    <sbol:displayId>O33950_20000_cds</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33950_20000_cds"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/P07773_30000_rbs/1">
+    <sbol:displayId>P07773_30000_rbs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_30000_rbs"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33948_10000_cds/1">
+    <sbol:displayId>O33948_10000_cds</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_10000_cds"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85675_30000_rbs/1">
+    <sbol:displayId>O85675_30000_rbs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_30000_rbs"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/P07773_10000_gene/1">
+    <sbol:displayId>P07773_10000_gene</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_10000_gene"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000704"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://identifiers.org/so/SO:0000987"/>
+    <sbol:version>1</sbol:version>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/P07773_10000_gene/RP1_5_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP1_5_prime_assembly/1"/>
+        <sbol:displayId>RP1_5_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_10000_gene/RP1_5_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/P07773_10000_gene/P07773_10000_rbs_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_10000_rbs/1"/>
+        <sbol:displayId>P07773_10000_rbs_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_10000_gene/P07773_10000_rbs_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/P07773_10000_gene/P07773_10000_cds_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_10000_cds/1"/>
+        <sbol:displayId>P07773_10000_cds_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_10000_gene/P07773_10000_cds_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/P07773_10000_gene/RP1_3_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP1_3_prime_assembly/1"/>
+        <sbol:displayId>RP1_3_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_10000_gene/RP1_3_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/P07773_10000_gene/constraint_0/1">
+        <sbol:displayId>constraint_0</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_10000_gene/P07773_10000_rbs_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_10000_gene/constraint_0"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_10000_gene/RP1_5_prime_assembly_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/P07773_10000_gene/constraint_1/1">
+        <sbol:displayId>constraint_1</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_10000_gene/P07773_10000_cds_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_10000_gene/constraint_1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_10000_gene/P07773_10000_rbs_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/P07773_10000_gene/constraint_2/1">
+        <sbol:displayId>constraint_2</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_10000_gene/RP1_3_prime_assembly_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_10000_gene/constraint_2"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_10000_gene/P07773_10000_cds_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33948_10000_rbs/1">
+    <sbol:displayId>O33948_10000_rbs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_10000_rbs"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/P07773_30000_gene/1">
+    <sbol:displayId>P07773_30000_gene</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_30000_gene"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000704"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://identifiers.org/so/SO:0000987"/>
+    <sbol:version>1</sbol:version>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/P07773_30000_gene/RP1_5_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP1_5_prime_assembly/1"/>
+        <sbol:displayId>RP1_5_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_30000_gene/RP1_5_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/P07773_30000_gene/P07773_30000_rbs_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_30000_rbs/1"/>
+        <sbol:displayId>P07773_30000_rbs_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_30000_gene/P07773_30000_rbs_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/P07773_30000_gene/P07773_30000_cds_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_30000_cds/1"/>
+        <sbol:displayId>P07773_30000_cds_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_30000_gene/P07773_30000_cds_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/P07773_30000_gene/RP1_3_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP1_3_prime_assembly/1"/>
+        <sbol:displayId>RP1_3_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_30000_gene/RP1_3_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/P07773_30000_gene/constraint_0/1">
+        <sbol:displayId>constraint_0</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_30000_gene/P07773_30000_rbs_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_30000_gene/constraint_0"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_30000_gene/RP1_5_prime_assembly_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/P07773_30000_gene/constraint_1/1">
+        <sbol:displayId>constraint_1</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_30000_gene/P07773_30000_cds_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_30000_gene/constraint_1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_30000_gene/P07773_30000_rbs_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/P07773_30000_gene/constraint_2/1">
+        <sbol:displayId>constraint_2</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_30000_gene/RP1_3_prime_assembly_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_30000_gene/constraint_2"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_30000_gene/P07773_30000_cds_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33948_20000_gene/1">
+    <sbol:displayId>O33948_20000_gene</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_20000_gene"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000704"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://identifiers.org/so/SO:0000987"/>
+    <sbol:version>1</sbol:version>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33948_20000_gene/RP1_5_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP1_5_prime_assembly/1"/>
+        <sbol:displayId>RP1_5_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_20000_gene/RP1_5_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33948_20000_gene/O33948_20000_rbs_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_20000_rbs/1"/>
+        <sbol:displayId>O33948_20000_rbs_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_20000_gene/O33948_20000_rbs_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33948_20000_gene/O33948_20000_cds_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_20000_cds/1"/>
+        <sbol:displayId>O33948_20000_cds_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_20000_gene/O33948_20000_cds_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33948_20000_gene/RP1_3_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP1_3_prime_assembly/1"/>
+        <sbol:displayId>RP1_3_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_20000_gene/RP1_3_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33948_20000_gene/constraint_0/1">
+        <sbol:displayId>constraint_0</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_20000_gene/O33948_20000_rbs_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_20000_gene/constraint_0"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_20000_gene/RP1_5_prime_assembly_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33948_20000_gene/constraint_1/1">
+        <sbol:displayId>constraint_1</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_20000_gene/O33948_20000_cds_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_20000_gene/constraint_1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_20000_gene/O33948_20000_rbs_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33948_20000_gene/constraint_2/1">
+        <sbol:displayId>constraint_2</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_20000_gene/RP1_3_prime_assembly_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_20000_gene/constraint_2"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_20000_gene/O33948_20000_cds_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/P07773_10000_rbs/1">
+    <sbol:displayId>P07773_10000_rbs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_10000_rbs"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33948_10000_gene/1">
+    <sbol:displayId>O33948_10000_gene</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_10000_gene"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000704"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://identifiers.org/so/SO:0000987"/>
+    <sbol:version>1</sbol:version>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33948_10000_gene/RP1_5_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP1_5_prime_assembly/1"/>
+        <sbol:displayId>RP1_5_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_10000_gene/RP1_5_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33948_10000_gene/O33948_10000_rbs_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_10000_rbs/1"/>
+        <sbol:displayId>O33948_10000_rbs_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_10000_gene/O33948_10000_rbs_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33948_10000_gene/O33948_10000_cds_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_10000_cds/1"/>
+        <sbol:displayId>O33948_10000_cds_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_10000_gene/O33948_10000_cds_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33948_10000_gene/RP1_3_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP1_3_prime_assembly/1"/>
+        <sbol:displayId>RP1_3_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_10000_gene/RP1_3_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33948_10000_gene/constraint_0/1">
+        <sbol:displayId>constraint_0</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_10000_gene/O33948_10000_rbs_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_10000_gene/constraint_0"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_10000_gene/RP1_5_prime_assembly_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33948_10000_gene/constraint_1/1">
+        <sbol:displayId>constraint_1</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_10000_gene/O33948_10000_cds_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_10000_gene/constraint_1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_10000_gene/O33948_10000_rbs_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O33948_10000_gene/constraint_2/1">
+        <sbol:displayId>constraint_2</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_10000_gene/RP1_3_prime_assembly_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_10000_gene/constraint_2"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O33948_10000_gene/O33948_10000_cds_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85674_20000_cds/1">
+    <sbol:displayId>O85674_20000_cds</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_20000_cds"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/P07773_10000_cds/1">
+    <sbol:displayId>P07773_10000_cds</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_10000_cds"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85674_20000_rbs/1">
+    <sbol:displayId>O85674_20000_rbs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_20000_rbs"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/RP1_5_prime_assembly/1">
+    <sbol:displayId>RP1_5_prime_assembly</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP1_5_prime_assembly"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000143"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/P07773_30000_cds/1">
+    <sbol:displayId>P07773_30000_cds</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_30000_cds"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85674_30000_gene/1">
+    <sbol:displayId>O85674_30000_gene</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_30000_gene"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000704"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://identifiers.org/so/SO:0000987"/>
+    <sbol:version>1</sbol:version>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85674_30000_gene/RP2_5_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP2_5_prime_assembly/1"/>
+        <sbol:displayId>RP2_5_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_30000_gene/RP2_5_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85674_30000_gene/O85674_30000_rbs_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_30000_rbs/1"/>
+        <sbol:displayId>O85674_30000_rbs_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_30000_gene/O85674_30000_rbs_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85674_30000_gene/O85674_30000_cds_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_30000_cds/1"/>
+        <sbol:displayId>O85674_30000_cds_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_30000_gene/O85674_30000_cds_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85674_30000_gene/RP2_3_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP2_3_prime_assembly/1"/>
+        <sbol:displayId>RP2_3_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_30000_gene/RP2_3_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85674_30000_gene/constraint_0/1">
+        <sbol:displayId>constraint_0</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_30000_gene/O85674_30000_rbs_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_30000_gene/constraint_0"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_30000_gene/RP2_5_prime_assembly_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85674_30000_gene/constraint_1/1">
+        <sbol:displayId>constraint_1</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_30000_gene/O85674_30000_cds_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_30000_gene/constraint_1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_30000_gene/O85674_30000_rbs_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85674_30000_gene/constraint_2/1">
+        <sbol:displayId>constraint_2</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_30000_gene/RP2_3_prime_assembly_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_30000_gene/constraint_2"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85674_30000_gene/O85674_30000_cds_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/RP1_3_prime_assembly/1">
+    <sbol:displayId>RP1_3_prime_assembly</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP1_3_prime_assembly"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000143"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85675_10000_gene/1">
+    <sbol:displayId>O85675_10000_gene</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_10000_gene"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000704"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://identifiers.org/so/SO:0000987"/>
+    <sbol:version>1</sbol:version>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85675_10000_gene/RP2_5_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP2_5_prime_assembly/1"/>
+        <sbol:displayId>RP2_5_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_10000_gene/RP2_5_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85675_10000_gene/O85675_10000_rbs_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_10000_rbs/1"/>
+        <sbol:displayId>O85675_10000_rbs_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_10000_gene/O85675_10000_rbs_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85675_10000_gene/O85675_10000_cds_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_10000_cds/1"/>
+        <sbol:displayId>O85675_10000_cds_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_10000_gene/O85675_10000_cds_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85675_10000_gene/RP2_3_prime_assembly_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://liverpool.ac.uk/ComponentDefinition/RP2_3_prime_assembly/1"/>
+        <sbol:displayId>RP2_3_prime_assembly_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_10000_gene/RP2_3_prime_assembly_0"/>
+        <sbol:roleIntegration rdf:resource="http://sbols.org/v2#mergeRoles"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85675_10000_gene/constraint_0/1">
+        <sbol:displayId>constraint_0</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_10000_gene/O85675_10000_rbs_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_10000_gene/constraint_0"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_10000_gene/RP2_5_prime_assembly_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85675_10000_gene/constraint_1/1">
+        <sbol:displayId>constraint_1</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_10000_gene/O85675_10000_cds_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_10000_gene/constraint_1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_10000_gene/O85675_10000_rbs_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://liverpool.ac.uk/ComponentDefinition/O85675_10000_gene/constraint_2/1">
+        <sbol:displayId>constraint_2</sbol:displayId>
+        <sbol:object rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_10000_gene/RP2_3_prime_assembly_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_10000_gene/constraint_2"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://liverpool.ac.uk/ComponentDefinition/O85675_10000_gene/O85675_10000_cds_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://liverpool.ac.uk/ComponentDefinition/P07773_20000_rbs/1">
+    <sbol:displayId>P07773_20000_rbs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://liverpool.ac.uk/ComponentDefinition/P07773_20000_rbs"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+</rdf:RDF>
