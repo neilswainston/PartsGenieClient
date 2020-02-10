@@ -27,12 +27,12 @@ class PartsGenieClient():
     def __init__(self, url='https://parts.synbiochem.co.uk'):
         self.__url = url if url[-1] == '/' else url + '/'
 
-    def run(self, filename, out_dir):
+    def run(self, filename, taxonomy_id, out_dir):
         '''Run client.'''
         if not os.path.exists(out_dir):
             os.makedirs(out_dir)
 
-        job_ids = self.__run_parts_genie(filename)
+        job_ids = self.__run_parts_genie(filename, taxonomy_id)
 
         results = {}
 
@@ -48,13 +48,15 @@ class PartsGenieClient():
 
         _update_docs(filename, results, out_dir)
 
-    def __run_parts_genie(self, filename):
+    def __run_parts_genie(self, filename, taxonomy_id):
         '''Run PartsGenie.'''
         url = self.__url + 'submit_sbol'
 
         with open(filename, 'rb') as fle:
             files = [('sbol', fle)]
-            resp = requests.post(url, files=files)
+            resp = requests.post(url,
+                                 data={'taxonomy_id': taxonomy_id},
+                                 files=files)
             resp_json = json.loads(resp.text)
             return resp_json['job_ids']
 
@@ -120,7 +122,7 @@ def _update_docs(filename, results, out_dir):
 def main(args):
     '''main method.'''
     client = PartsGenieClient(args[0])
-    client.run(args[1], args[2])
+    client.run(args[1], args[2], args[3])
 
 
 if __name__ == '__main__':
