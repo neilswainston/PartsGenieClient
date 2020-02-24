@@ -24,7 +24,7 @@ Config.setOption('validate', False)
 class PartsGenieClient():
     '''PartsGenieClient class.'''
 
-    def __init__(self, url='https://parts.synbiochem.co.uk'):
+    def __init__(self, url):
         self.__url = url if url[-1] == '/' else url + '/'
 
     def run(self, filename, taxonomy_id, out_dir):
