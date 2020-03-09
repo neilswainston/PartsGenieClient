@@ -21,6 +21,26 @@ from sseclient import SSEClient
 Config.setOption('validate', False)
 
 
+class PartsGenieError(Exception):
+    '''PartsGenieError class.'''
+
+    def __init__(self, job_id, cause):
+        self.__job_id = job_id
+        self.__cause = cause
+        super(PartsGenieError, self).__init__(str(cause))
+
+    def get_job_id(self):
+        '''Get job id.'''
+        return self.__job_id
+
+    def get_cause(self):
+        '''Get cause.'''
+        return self.__cause
+
+    def __repr__(self):
+        return str({'job_id': self.__job_id, 'cause': self.__cause})
+
+
 class PartsGenieClient():
     '''PartsGenieClient class.'''
 
@@ -44,7 +64,7 @@ class PartsGenieClient():
                     results.update({res['desc']: res
                                     for res in response[0][1]['result']})
                 else:
-                    raise Exception(job_id)
+                    self.__raise_error(job_id, response, job_ids, results)
 
         _update_docs(filename, results, out_dir)
 
@@ -80,6 +100,17 @@ class PartsGenieClient():
                     break
 
         return responses
+
+    def __raise_error(self, error_job_id, response, job_ids, results):
+        '''Raise error.'''
+        try:
+            for job_id in job_ids:
+                if job_id != error_job_id and job_id not in results:
+                    # Cancel outstanding jobs on PartsGenie:
+                    url = self.__url + 'cancel/' + job_id
+                    requests.get(url)
+        finally:
+            raise PartsGenieError(error_job_id, response[0][1])
 
 
 def _update_docs(filename, results, out_dir):
