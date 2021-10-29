@@ -21,18 +21,38 @@ from sseclient import SSEClient
 Config.setOption('validate', False)
 
 
+class PartsGenieError(Exception):
+    '''PartsGenieError class.'''
+
+    def __init__(self, job_id, cause):
+        self.__job_id = job_id
+        self.__cause = cause
+        super(PartsGenieError, self).__init__(str(cause))
+
+    def get_job_id(self):
+        '''Get job id.'''
+        return self.__job_id
+
+    def get_cause(self):
+        '''Get cause.'''
+        return self.__cause
+
+    def __repr__(self):
+        return str({'job_id': self.__job_id, 'cause': self.__cause})
+
+
 class PartsGenieClient():
     '''PartsGenieClient class.'''
 
-    def __init__(self, url='https://parts.synbiochem.co.uk'):
+    def __init__(self, url):
         self.__url = url if url[-1] == '/' else url + '/'
 
-    def run(self, filename, out_dir):
+    def run(self, filename, taxonomy_id, out_dir):
         '''Run client.'''
         if not os.path.exists(out_dir):
             os.makedirs(out_dir)
 
-        job_ids = self.__run_parts_genie(filename)
+        job_ids = self.__run_parts_genie(filename, taxonomy_id)
 
         results = {}
 
@@ -44,17 +64,19 @@ class PartsGenieClient():
                     results.update({res['desc']: res
                                     for res in response[0][1]['result']})
                 else:
-                    raise Exception(job_id)
+                    self.__raise_error(job_id, response, job_ids, results)
 
         _update_docs(filename, results, out_dir)
 
-    def __run_parts_genie(self, filename):
+    def __run_parts_genie(self, filename, taxonomy_id):
         '''Run PartsGenie.'''
         url = self.__url + 'submit_sbol'
 
         with open(filename, 'rb') as fle:
             files = [('sbol', fle)]
-            resp = requests.post(url, files=files)
+            resp = requests.post(url,
+                                 data={'taxonomy_id': taxonomy_id},
+                                 files=files)
             resp_json = json.loads(resp.text)
             return resp_json['job_ids']
 
@@ -78,6 +100,17 @@ class PartsGenieClient():
                     break
 
         return responses
+
+    def __raise_error(self, error_job_id, response, job_ids, results):
+        '''Raise error.'''
+        try:
+            for job_id in job_ids:
+                if job_id != error_job_id and job_id not in results:
+                    # Cancel outstanding jobs on PartsGenie:
+                    url = self.__url + 'cancel/' + job_id
+                    requests.get(url)
+        finally:
+            raise PartsGenieError(error_job_id, response[0][1])
 
 
 def _update_docs(filename, results, out_dir):
@@ -120,7 +153,7 @@ def _update_docs(filename, results, out_dir):
 def main(args):
     '''main method.'''
     client = PartsGenieClient(args[0])
-    client.run(args[1], args[2])
+    client.run(args[1], args[2], args[3])
 
 
 if __name__ == '__main__':
