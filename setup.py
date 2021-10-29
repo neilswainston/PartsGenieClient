@@ -3,7 +3,7 @@ from os import path as os_path
 
 
 ## INFOS ##
-package     = 'parts_genie_client'
+package     = 'partsgenie_client'
 descr       = 'Post requests on a PartsGenie server'
 url         = 'https://github.com/neilswainston/PartsGenieClient'
 authors     = 'Neil Swainston'
@@ -46,7 +46,7 @@ setup(
     long_description_content_type = 'text/markdown',
     url                           = url,
     packages                      = [package],
-    package_dir                   = {package: package},
+    package_dir                   = {package: 'parts_genie'},
     include_package_data          = True,
     test_suite                    = 'pytest',
     license                       = 'MIT',
@@ -55,6 +55,6 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
     ],
-    python_requires               = '3.7',
+    python_requires               = '<=3.7',
 )
 

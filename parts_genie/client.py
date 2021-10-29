@@ -47,11 +47,8 @@ class PartsGenieClient():
     def __init__(self, url):
         self.__url = url if url[-1] == '/' else url + '/'
 
-    def run(self, filename, taxonomy_id, out_dir):
+    def run(self, filename, taxonomy_id, outfile):
         '''Run client.'''
-        if not os.path.exists(out_dir):
-            os.makedirs(out_dir)
-
         job_ids = self.__run_parts_genie(filename, taxonomy_id)
 
         results = {}
@@ -66,7 +63,7 @@ class PartsGenieClient():
                 else:
                     self.__raise_error(job_id, response, job_ids, results)
 
-        _update_docs(filename, results, out_dir)
+        _update_docs(filename, results, outfile)
 
     def __run_parts_genie(self, filename, taxonomy_id):
         '''Run PartsGenie.'''
@@ -113,7 +110,7 @@ class PartsGenieClient():
             raise PartsGenieError(error_job_id, response[0][1])
 
 
-def _update_docs(filename, results, out_dir):
+def _update_docs(filename, results, outfile):
     '''Update documents.'''
     doc = Document()
     doc.read(filename)
@@ -147,14 +144,4 @@ def _update_docs(filename, results, out_dir):
                      seq,
                      SBOL_ENCODING_IUPAC)
 
-    doc.write(os.path.join(out_dir, os.path.basename(filename)))
-
-
-def main(args):
-    '''main method.'''
-    client = PartsGenieClient(args[0])
-    client.run(args[1], args[2], args[3])
-
-
-if __name__ == '__main__':
-    main(sys.argv[1:])
+    doc.write(outfile)
