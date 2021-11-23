@@ -5,6 +5,3 @@ dependencies:
   - python=3.7
   - requests
   - sseclient==0.0.22
-  - pip
-  - pip:
-    - pySBOL
