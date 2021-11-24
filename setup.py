@@ -46,7 +46,7 @@ setup(
     long_description_content_type = 'text/markdown',
     url                           = url,
     packages                      = [package],
-    package_dir                   = {package: 'parts_genie'},
+    package_dir                   = {package: package},
     include_package_data          = True,
     test_suite                    = 'pytest',
     license                       = 'MIT',
