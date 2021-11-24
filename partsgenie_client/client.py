@@ -14,7 +14,7 @@ import os.path
 import sys
 
 import requests
-from sbol import Config, Document, Sequence, SBOL_ENCODING_IUPAC
+from .sbol import Config, Document, Sequence, SBOL_ENCODING_IUPAC
 from sseclient import SSEClient
 
 
