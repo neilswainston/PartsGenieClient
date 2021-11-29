@@ -7,3 +7,4 @@ To view a copy of this license, visit <http://opensource.org/licenses/MIT/>.
 
 @author:  neilswainston
 '''
+from .client import PartsGenieClient
