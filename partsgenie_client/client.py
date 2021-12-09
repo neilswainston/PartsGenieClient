@@ -12,7 +12,6 @@ To view a copy of this license, visit <http://opensource.org/licenses/MIT/>.
 import json
 import os.path
 import sys
-
 import requests
 from sbml2sbol.sbol import Config, Document, Sequence, SBOL_ENCODING_IUPAC
 from sseclient import SSEClient
